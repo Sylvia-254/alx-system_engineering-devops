@@ -34,11 +34,11 @@ defaults
   timeout server 15s
   timeout http-request 10s
 
-frontend clickviral-tech-frontend
+frontend cheptoo-tech-frontend
     bind *:80
-    default_backend clickviral-tech-backend
+    default_backend cheptoo-tech-backend
 
-backend clickviral-tech-backend
+backend cheptoo-tech-backend
     balance roundrobin
     server 477744-web-01 18.209.180.42:80 check
     server 477744-web-02 18.209.152.235:80 check
